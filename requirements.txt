@@ -1,10 +1,7 @@
 streamlit
 streamlit_ext
-pydna
-biopython
 pandas
-zipfile
-io
+numpy
 XlsxWriter
 matplotlib
 openpyxl
