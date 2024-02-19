@@ -41,12 +41,12 @@ if tabela_ct:
 
         tabela_ct = tabela_ct.filter(items=fil, axis=0)
 
-        # dry_ctr = tabela_ct[['AF_T2021_OilPalm_A1', 'AF_T2021_OilPalm_A2',
-        #                     'AF_T2021_OilPalm_A3', 'AF_T2021_OilPalm_A4', 'AF_T2021_OilPalm_A5',
-        #                     'AF_T2021_OilPalm_A6']]
-        # dry_sts = tabela_ct[['AF_T2021_OilPalm_S1', 'AF_T2021_OilPalm_S2',
-        #                     'AF_T2021_OilPalm_S3', 'AF_T2021_OilPalm_S4', 'AF_T2021_OilPalm_S5',
-        #                     'AF_T2021_OilPalm_S6']]
+        dry_ctr = tabela_ct[['AF_T2021_OilPalm_A1', 'AF_T2021_OilPalm_A2',
+                             'AF_T2021_OilPalm_A3', 'AF_T2021_OilPalm_A4', 'AF_T2021_OilPalm_A5',
+                             'AF_T2021_OilPalm_A6']]
+        dry_sts = tabela_ct[['AF_T2021_OilPalm_S1', 'AF_T2021_OilPalm_S2',
+                             'AF_T2021_OilPalm_S3', 'AF_T2021_OilPalm_S4', 'AF_T2021_OilPalm_S5',
+                             'AF_T2021_OilPalm_S6']]
         wet_ctr = tabela_ct[['AF_T2022_OilPalm_A1', 'AF_T2022_OilPalm_A2',
                              'AF_T2022_OilPalm_A3', 'AF_T2022_OilPalm_A4', 'AF_T2022_OilPalm_A5',
                              'AF_T2022_OilPalm_A6']]
@@ -67,16 +67,16 @@ if tabela_ct:
                            options=['Linha', 'Coluna', 'BoxPlot', 'Media'])
 
         if tipo_gr == 'Linha':
-            pass
-            # faz_grafico2(dry_ctr, dry_sts, wet_ctr, wet_sts)
+            #pass
+            faz_grafico2(dry_ctr, dry_sts, wet_ctr, wet_sts)
 
         if tipo_gr == 'Coluna':
-            pass
-            # faz_grafico3(dry_ctr, dry_sts, wet_ctr, wet_sts)
+            #pass
+            faz_grafico3(dry_ctr, dry_sts, wet_ctr, wet_sts)
 
         if tipo_gr == 'BoxPlot':
-            pass
-            # faz_grafico4(dry_ctr, dry_sts, wet_ctr, wet_sts)
+            #pass
+            faz_grafico4(dry_ctr, dry_sts, wet_ctr, wet_sts)
 
         if tipo_gr == 'Media':
             faz_grafico5(wet_ctr, wet_sts)
